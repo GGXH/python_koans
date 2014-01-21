@@ -35,7 +35,7 @@ class AboutSets(Koan):
 
     def test_we_can_query_set_membership(self):
         self.assertEqual(True, 127 in set([127, 0, 0, 1]))
-        self.assertEqual(False, 'cow' not in set('apocalypse now'))
+        self.assertEqual(False, 'cow' in set('apocalypse now'))
 
     def test_we_can_compare_subsets(self):
         self.assertEqual(True, set('cake') <= set('cherry cake'))
