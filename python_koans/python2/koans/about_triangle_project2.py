@@ -11,7 +11,8 @@ class AboutTriangleProject2(Koan):
     # The first assignment did not talk about how to handle errors.
     # Let's handle that part now.
     def test_illegal_triangles_throw_exceptions(self):
-        # Calls triangle(0, 0, 0)
+#        print triangle, 0, 0, 0
+        # print TriangleError
         self.assertRaises(TriangleError, triangle, 0, 0, 0)
 
         self.assertRaises(TriangleError, triangle, 3, 4, -5)
